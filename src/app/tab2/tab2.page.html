@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Category
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor='let cat of displayArr; let i = index' (click)='go(cat)'>
+    <ion-card-content>
+      {{ cat.cat_name }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

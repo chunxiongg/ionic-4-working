@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CatID: {{ getOne.cat_id }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor='let return of arr'>
+    <ion-card-content>
+      {{ return.product_name }}
+     </ion-card-content>
+  </ion-card>
+</ion-content>
